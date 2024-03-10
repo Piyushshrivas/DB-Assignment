@@ -4,7 +4,7 @@
 Based on the names of the entities, it appears that there is a relationship between the "Product" and "Product_Category" tables/entities. This relationship suggests that each product belongs to a specific category. It implies a one-to-many relationship where one product category can have multiple products, but each product can only belong to one category.
 
 ## 2-Ensuring valid category assignment:
-To ensure that each product in the "Product" table has a valid category assigned to it, you can enforce referential integrity constraints. This can be achieved by setting up a foreign key relationship between the "Product" and "Product_Category" tables. The foreign key constraint ensures that the value in the "Product_Category" column of the "Product" table matches with a valid primary key value from the "Product_Category" table. If a product is inserted or updated with an invalid category, the database will reject the operation, thereby ensuring the validity of the category assignment.
+To ensure that each product in the "Product" table has a valid category assigned to it, we can enforce referential integrity constraints. This can be achieved by setting up a foreign key relationship between the "Product" and "Product_Category" tables. The foreign key constraint ensures that the value in the "Product_Category" column of the "Product" table matches with a valid primary key value from the "Product_Category" table. If a product is inserted or updated with an invalid category, the database will reject the operation, thereby ensuring the validity of the category assignment.
 
 ## 3-Creating the schema in a Database script or ORM:
 ```sql
